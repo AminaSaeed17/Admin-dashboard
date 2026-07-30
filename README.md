@@ -1,5 +1,7 @@
 # Modern Admin Dashboard
 
+🔗 **Live Demo:** [View Dashboard](https://AminaSaeed17.github.io/Admin-dashboard/)
+
 A responsive admin dashboard built with React that provides an efficient interface for managing teams, contacts, invoices, profiles, and calendar events.
 
 ## Features
