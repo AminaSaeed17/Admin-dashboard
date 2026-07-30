@@ -1,0 +1,50 @@
+{
+  "name": "dashboard",
+  "private": true,
+  "version": "0.0.0",
+  "homepage": "https://AminaSaeed17.github.io/admin-dashboard",
+  "type": "module",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@fullcalendar/core": "^6.1.21",
+    "@fullcalendar/daygrid": "^6.1.21",
+    "@fullcalendar/interaction": "^6.1.21",
+    "@fullcalendar/react": "^6.1.21",
+    "@fullcalendar/timegrid": "^6.1.21",
+    "@mui/icons-material": "^9.2.0",
+    "@mui/material": "^9.2.0",
+    "@mui/styled-engine-sc": "^9.1.1",
+    "@mui/x-data-grid": "^9.10.1",
+    "axios": "^1.18.1",
+    "formik": "^2.4.9",
+    "install": "^0.13.0",
+    "lucide-react": "^1.25.0",
+    "npm": "^12.0.1",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-hot-toast": "^2.6.0",
+    "react-router-dom": "^7.18.1",
+    "styled-components": "^6.4.3",
+    "temporal-polyfill": "^1.0.2",
+    "yup": "^1.7.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "gh-pages": "^6.3.0",
+    "oxlint": "^1.71.0",
+    "tailwindcss": "^4.3.3",
+    "vite": "^8.1.1"
+  }
+}
