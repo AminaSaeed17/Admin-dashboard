@@ -12,6 +12,7 @@ import FAQ from "./Pages/FAQ/FAQ";
 import LineChart from "./Pages/LineChart/LineChart";
 import BarChart from "./Pages/BarChart/BarChart";
 import PieChart from "./Pages/PieChart/PieChart";
+import Geography from "./Pages/Geography/Geography";
 
 
 
@@ -27,6 +28,7 @@ const router = createHashRouter([
 		{path: 'lineChart', element: <LineChart/>},
 		{path: 'barChart', element: <BarChart/>},
 		{path: 'pieChart', element: <PieChart/>},
+		{path: 'geography', element: <Geography/>},
 	]}
 	
 ])

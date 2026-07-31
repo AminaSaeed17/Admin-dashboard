@@ -1,6 +1,7 @@
+import LineChartSection from "./LineChartSection";
 
 export default function LineChart() {
   return <>
-    <div>LineChart</div>
+    <LineChartSection/>
   </>
 }

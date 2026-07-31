@@ -23,6 +23,7 @@ import HelpOutlinedIcon from '@mui/icons-material/HelpOutlined';
 import BarChartOutlinedIcon from '@mui/icons-material/BarChartOutlined';
 import PieChartOutlineOutlinedIcon from '@mui/icons-material/PieChartOutlineOutlined';
 import TimelineOutlinedIcon from '@mui/icons-material/TimelineOutlined';
+import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 // @ts-ignore
 import userImage from '../../assets/images.jpg'
 import { useLocation, useNavigate } from "react-router-dom";
@@ -105,6 +106,7 @@ const Array3 = [
   {"text": "Bar Chart", "icon": <BarChartOutlinedIcon/>, "path": '/barChart'},
   {"text": "Pie Chart", "icon": <PieChartOutlineOutlinedIcon/>, "path": '/pieChart'},
   {"text": "Line Chart", "icon": <TimelineOutlinedIcon/>, "path": '/lineChart'},
+  {"text": "Geography", "icon": <MapOutlinedIcon/>, "path": '/Geography'},
 ]
 
 

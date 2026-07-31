@@ -1,6 +1,7 @@
+import BarSection from './BarSection';
 
 export default function BarChart() {
   return <>
-    <div>BarChart</div>
+     <BarSection/>
   </>
 }
