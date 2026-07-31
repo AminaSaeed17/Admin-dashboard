@@ -1,16 +1,24 @@
-# React + Vite
+# Modern Admin Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+🔗 **Live Demo:** [View Dashboard](https://AminaSaeed17.github.io/Admin-dashboard/)
 
-Currently, two official plugins are available:
+A responsive admin dashboard built with React that provides an efficient interface for managing teams, contacts, invoices, profiles, and calendar events.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
+- Responsive Admin Layout
+- Client-side routing with React Router DOM
+- Form management using Formik
+- Toast notifications using React Hot Toast
+- Interactive calendar with FullCalendar
+- Modern UI components with Material UI
+- Data visualization with Bar, Pie, and Line charts
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Technologies
+- React.js
+- React Router DOM
+- Material UI (MUI)
+- Formik
+- React Hot Toast
+- FullCalendar
+- JavaScript
+- CSS
