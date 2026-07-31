@@ -1,6 +1,6 @@
 import { createTheme, ThemeProvider } from "@mui/material";
 import Layout from "./Components/Layout/Layout";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import { ColorModeContext, useMode } from "./theme";
 import Dashboard from "./Pages/Dashboard/Dashboard";
 import ManageTeam from "./Pages/ManageTeam/ManageTeam";
@@ -15,7 +15,7 @@ import PieChart from "./Pages/PieChart/PieChart";
 
 
 
-const router = createBrowserRouter([
+const router = createHashRouter([
 	{path: '/', element: <Layout/>, children: [
 		{index: true, element: <Dashboard/>},
 		{path: 'manageTeam', element: <ManageTeam/>},

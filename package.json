@@ -2,11 +2,11 @@
   "name": "dashboard",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://AminaSaeed17.github.io/admin-dashboard",
+  "homepage": "https://AminaSaeed17.github.io/Admin-dashboard",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "oxlint",

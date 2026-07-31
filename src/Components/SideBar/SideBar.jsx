@@ -1,6 +1,5 @@
 import {
   Avatar,
-  Container,
   Divider,
   IconButton,
   List,
@@ -26,7 +25,7 @@ import PieChartOutlineOutlinedIcon from '@mui/icons-material/PieChartOutlineOutl
 import TimelineOutlinedIcon from '@mui/icons-material/TimelineOutlined';
 // @ts-ignore
 import userImage from '../../assets/images.jpg'
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { grey } from "@mui/material/colors";
 
 const drawerWidth = 240;
@@ -114,6 +113,7 @@ const Array3 = [
 export default function SideBar({ open, handleDrawerClose }) {
   const navigate = useNavigate();
   const theme = useTheme();
+  const location = useLocation();
   return (
     <>
         <Drawer variant="permanent" open={open}>
