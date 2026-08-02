@@ -36,10 +36,10 @@ const data = [
 ]
 
 
-export default function PieChartSection() {
+export default function PieChartSection({isDashboard = false}) {
     const theme = useTheme();
   return (
-    <Box sx={{height: '74vh'}}>
+    <Box sx={{height: isDashboard ? '230px' : '74vh'}}>
       <ResponsivePie
         data={data}
         theme={{
@@ -152,10 +152,12 @@ export default function PieChartSection() {
         "tableCellValue": {}
     }
 }}
-        margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
-        innerRadius={0.5}
+        margin={isDashboard? { top: 10, right: 0, bottom: 10, left: 0 } : { top: 40, right: 80, bottom: 80, left: 80 }}
+        innerRadius={isDashboard? 0.8 : 0.5}
         padAngle={0.6}
         cornerRadius={2}
+          enableArcLabels={isDashboard? false : true}
+            enableArcLinkLabels={isDashboard? false : true}
         activeOuterRadiusOffset={8}
         arcLinkLabelsSkipAngle={10}
         arcLinkLabelsTextColor={theme.palette.text.primary}
@@ -163,7 +165,7 @@ export default function PieChartSection() {
         arcLinkLabelsColor={{ from: 'color' }}
         arcLabelsSkipAngle={10}
         arcLabelsTextColor={{ from: 'color', modifiers: [['darker', 2]] }}
-        legends={[
+        legends={ isDashboard? [] : [
             {
                 anchor: 'bottom',
                 direction: 'row',

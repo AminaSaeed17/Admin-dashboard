@@ -270,10 +270,10 @@ const data = [
   }
 ]
 
-export default function LineChartSection() {
+export default function LineChartSection({isDashboard = false}) {
     const theme = useTheme();
   return (
-    <Box sx={{height: '74vh'}}>
+    <Box sx={{height: isDashboard? '230px' :  '74vh'}}>
         <ResponsiveLine 
         data={data}
         theme={{
@@ -389,8 +389,8 @@ export default function LineChartSection() {
         margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
         yScale={{ type: 'linear', min: 'auto', max: 'auto', stacked: true, reverse: false }}
         curve="catmullRom"
-        axisBottom={{ legend: 'transportation', legendOffset: 36 }}
-        axisLeft={{ legend: 'count', legendOffset: -40 }}
+        axisBottom={{ legend: isDashboard? null : 'transportation', legendOffset: 36 }}
+        axisLeft={{ legend: isDashboard? null : 'count', legendOffset: -40 }}
         pointSize={10}
         pointColor={{ theme: 'background' }}
         pointBorderWidth={2}

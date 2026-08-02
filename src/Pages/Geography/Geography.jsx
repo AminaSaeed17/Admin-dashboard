@@ -6,10 +6,10 @@ import { Box, useTheme } from '@mui/material'
 
 console.log(geo[0]);
 
-export default function Geography() {
+export default function Geography({isDashboard = false}) {
   const theme = useTheme();
   return <>
-     <Box sx={{height: '74vh', border: `1px solid ${theme.palette.text.primary}`}}>
+     <Box sx={{height: isDashboard ? '350px' : '74vh', border: isDashboard ? null : `1px solid ${theme.palette.text.primary}`}}>
         <ResponsiveChoropleth /* or Choropleth for fixed dimensions */
         data={data}
         features={geo[0].features}
