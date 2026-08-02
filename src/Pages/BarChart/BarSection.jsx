@@ -44,7 +44,7 @@ const data = [
 export default function BarSection({isDashboard = false}) {
      const theme = useTheme();
   return (
-    <Box sx={{height: isDashboard ? '250px' : '75vh'}}>
+    <Box sx={{height: isDashboard ? '350px' : '75vh'}}>
         <ResponsiveBar /* or Bar for fixed dimensions */
         data={data}
         keys={[

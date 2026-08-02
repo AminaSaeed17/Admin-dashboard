@@ -6,7 +6,7 @@ import Geography from "../../Pages/Geography/Geography";
 export default function Row3() {
   const theme = useTheme();
   return <>
-    <Box sx={{display: 'flex', gap:1 ,flexWrap: "wrap" ,mt:3}}>
+    <Box sx={{display: 'flex', gap:1.5 ,flexWrap: "wrap" ,mt:2}}>
       <Paper sx={{width: "28%", flexGraw: 1, minWidth: "400px"}}>
       <Typography
           sx={{ padding: "30px 30px 0 30px", fontweight: "600", color: theme.palette.secondary.main }}

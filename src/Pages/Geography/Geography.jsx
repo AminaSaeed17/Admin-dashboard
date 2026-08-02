@@ -130,12 +130,12 @@ export default function Geography({isDashboard = false}) {
         unknownColor="#666666"
         label="properties.name"
         valueFormat=".2s"
-        projectionScale={135}
+        projectionScale={isDashboard ? 70 : 135}
         enableGraticule={false}
         graticuleLineColor="#dddddd"
         borderWidth={0.5}
         borderColor="#152538"
-        legends={[
+        legends={isDashboard ? [] : [
             {
                 anchor: 'bottom-left',
                 direction: 'column',

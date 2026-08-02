@@ -6,7 +6,7 @@ import { Transactions } from "./data";
 export default function Row2() {
   const theme = useTheme();
   return <>
-    <Stack sx={{flexDirection: "row", mt:3, gap: 1, flexWrap: "wrap"}}>
+    <Stack sx={{flexDirection: "row", mt:2, gap: 1, flexWrap: "wrap"}}>
       <Paper sx={{maxWidth: 900, flexGrow: 1}}>
         <Stack sx={{flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
           <Box>
