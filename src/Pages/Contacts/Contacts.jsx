@@ -9,6 +9,7 @@ import {
 
 import { columns, rows } from './data';
 import { Box } from '@mui/material';
+import Header from '../../Components/Header/Header';
 
 
 function CustomToolbar() {
@@ -24,14 +25,21 @@ function CustomToolbar() {
 
 
 export default function Contacts() {
-  return (
-    <Box sx={{ height: 600, width: "100%" }}>
-      <DataGrid
-        rows={rows}
-        // @ts-ignore
-        columns={columns}
-        showToolbar
-      />
+  return <>
+    <Box>
+       <Header
+        title="CONTACTS"
+        subTitle="List of Contacts for Future Reference" isDashboard={false}      />
+
+      
+      <Box sx={{ height: 600, width: "100%" }}>
+        <DataGrid
+          rows={rows}
+          // @ts-ignore
+          columns={columns}
+          showToolbar
+        />
+      </Box>
     </Box>
-  );
+  </>
 }

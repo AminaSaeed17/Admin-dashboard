@@ -7,6 +7,7 @@ import {
   ListItemButton,
   ListItemIcon,
   ListItemText,
+  Tooltip,
   Typography,
 } from "@mui/material";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
@@ -136,6 +137,7 @@ export default function SideBar({ open, handleDrawerClose }) {
           <List>
             {Array1.map((item) => (
               <ListItem key={item.path} disablePadding sx={{ display: "block" }}>
+                <Tooltip placement="left" title={open? null : item.text}>
                 <ListItemButton
                 onClick={()=> navigate(item.path)}
                   sx={[
@@ -184,6 +186,7 @@ export default function SideBar({ open, handleDrawerClose }) {
                     ]}
                   />
                 </ListItemButton>
+                </Tooltip>
               </ListItem>
             ))}
           </List>
@@ -191,6 +194,7 @@ export default function SideBar({ open, handleDrawerClose }) {
           <List>
             {Array2.map((item) => (
               <ListItem key={item.path} disablePadding sx={{ display: "block" }}>
+                <Tooltip placement="left" title={open? null : item.text}>
                 <ListItemButton
                 onClick={()=> navigate(item.path)}
                   sx={[
@@ -238,6 +242,7 @@ export default function SideBar({ open, handleDrawerClose }) {
                     ]}
                   />
                 </ListItemButton>
+                </Tooltip>
               </ListItem>
             ))}
           </List>
@@ -245,6 +250,7 @@ export default function SideBar({ open, handleDrawerClose }) {
           <List>
             {Array3.map((item) => (
               <ListItem key={item.path} disablePadding sx={{ display: "block" }}>
+                <Tooltip placement="left" title={open? null : item.text}>
                 <ListItemButton
                 onClick={()=> {navigate(item.path)}}
                   sx={[
@@ -292,6 +298,7 @@ export default function SideBar({ open, handleDrawerClose }) {
                     ]}
                   />
                 </ListItemButton>
+                </Tooltip>
               </ListItem>
             ))}
           </List>

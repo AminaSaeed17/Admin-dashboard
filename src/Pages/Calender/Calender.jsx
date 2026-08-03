@@ -104,6 +104,7 @@ function renderEventContent(eventInfo) {
 
 function Sidebar({ weekendsVisible, handleWeekendsToggle, currentEvents }) {
   return (
+    
     <Paper className='demo-app-sidebar'> 
         <h2 style={{textAlign: 'center', padding: '10px', fontSize: '20px'}}>All Events ({currentEvents.length})</h2>
         <ul>

@@ -1,5 +1,6 @@
 import { Box, Button, MenuItem, Stack } from "@mui/material";
 import TextField from "@mui/material/TextField";
+import Header from "../../Components/Header/Header";
 import { useFormik } from "formik";
 import toast, { Toaster } from "react-hot-toast";
 import * as Yup from "yup";
@@ -70,6 +71,7 @@ export default function ProfileForm() {
   position="top-right"
   reverseOrder={false}
 />
+<Header title="CREATE USER" subTitle="Create a New User Profile" isDashboard={false} />
       <Box
         onSubmit={formik.handleSubmit}
         component="form"

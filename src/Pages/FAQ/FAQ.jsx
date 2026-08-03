@@ -7,6 +7,7 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { useId } from 'react';
 import { Box, Stack } from '@mui/material';
+import Header from '../../Components/Header/Header';
 
 export default function FAQ() {
   const [expanded, setExpanded] = React.useState(false);
@@ -18,6 +19,7 @@ export default function FAQ() {
   const id =useId();
   return (
     <Box>
+       <Header title="FAQ" subTitle="Frequently Asked Questions Page" isDashboard={false} />
       <Stack sx={{flexDirection: 'column', gap: 2}}>
         <Accordion defaultExpanded onChange={handleChange("panel1")}>
           <AccordionSummary
